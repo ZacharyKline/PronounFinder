@@ -1,0 +1,25 @@
+
+body {
+    text-align: center;
+    margin: auto;
+}
+
+.heavenly{
+    background: url('https://media.giphy.com/media/ZFWOw9kyExBX2tbVCc/giphy.gif');
+    background-color: skyblue;
+
+}
+
+.demonic{
+    background: url('https://i.gifer.com/5Mz4.gif');
+    background-color: red;
+}
+li {
+    list-style: none;
+}
+
+.parent {
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.394);
+    width: fit-content;
+}
