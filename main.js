@@ -1,4 +1,7 @@
 let results = document.querySelector("#results");
+let bookTitle = document.createElement('h3')
+bookTitle.innerHTML = title
+document.body.append(bookTitle)
 let pronouns = [
 	"i",
 	"you",
@@ -31,11 +34,17 @@ function findPronouns(text) {
         let parentDiv = document.createElement('div')
         parentDiv.classList.add('parent')
         document.body.append(parentDiv)
+        let total = 0
 		sortedEntries.forEach((entry) => {
 			let listItem = document.createElement("div");
 			listItem.innerHTML = `"${entry[0]}" was found ${entry[1]} times`;
-			parentDiv.append(listItem)
+            parentDiv.append(listItem)
+            total += entry[1]
 		});
+        console.log(total)
+        let totalDiv = document.createElement('div')
+        totalDiv.innerHTML = `Total number of sin: <strong><u>${total}`
+        document.body.append(totalDiv)
 	}
 }
 
@@ -52,3 +61,5 @@ function buildObj(word) {
 }
 
 findPronouns(bible);
+
+
